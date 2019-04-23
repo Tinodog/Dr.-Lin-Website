@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  font-family: times new roman;
+  margin: 0;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #15781F;
+  color: White;
+  font-size: 30px;
+}
+
+.content {padding:20px; text-align: center;}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Math?</h1>
+  <p>A Quick Refresher of Basic Mathematics!</p>
+</div>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #F4D03F;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: green;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #F4D03F;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Yikes</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Ugli</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Stoopid</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+<h2 align="center">Basic Math</h2>
+
+<div class="row">
+  <div class="column" style="background-color:#E74C3C;">
+    <h2>Addition</h2>
+    <p>Finding the total, or sum, by combining two or more numbers. Example: 5 + 11 + 3 = 19 is an addition.</p>
+  </div>
+  <div class="column" style="background-color:#3498DB;">
+    <h2>Subtraction</h2>
+    <p>Subtraction in mathematics means you are taking something away from a group or number of things.  An example of a subtraction problem is the following: 5 - 3 = 2.</p>
+  </div>
+  <div class="column" style="background-color:#27AE60;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+
+</body>
+
+<div class="row">
+  <div class="column" style="background-color:#E74C3C;">
+    <h2>Addition</h2>
+    <p>Finding the total, or sum, by combining two or more numbers. Example: 5 + 11 + 3 = 19 is an addition.</p>
+  </div>
+  <div class="column" style="background-color:#3498DB;">
+    <h2>Subtraction</h2>
+    <p>Subtraction in mathematics means you are taking something away from a group or number of things.  An example of a subtraction problem is the following: 5 - 3 = 2.</p>
+  </div>
+  <div class="column" style="background-color:#27AE60;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+
+</body>
+
+
+
+<div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com" onclick="return FIX.track(this);">Comment Box</a> is loading comments...</div>
+<link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0"/>
+<script type="text/javascript" id="hcb">
+if(!window.hcb_user){hcb_user={};}(function(){var
+s=document.createElement("script"),l=hcb_user.PAGE||(""+window.location).replace(/'/g,"%27"),h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src",h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%2407l2gioqFXFtvHOD1Wrik."+"&opts=16862&num=10&ts=1482310374209");if(typeof s!="undefined")document.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
+</body>
+</html>
+
