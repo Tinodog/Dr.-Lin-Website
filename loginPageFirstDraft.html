@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<style>
+html, body {
+    height: 100%;
+}
+
+body {
+    /*background-color: #1B7BD3;*/
+    /*background: linear-gradient(#1E7FD9, #01529C);*/
+    background: white;
+    color: white;
+    font-family: Segoe UI, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    padding-top: 7.5%;
+}
+
+.header h1 {
+
+    margin-bottom: 3%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.header h2 {
+    margin-top: 0;
+    font-weight: lighter;
+    font-size: 1.2em
+}
+
+hr {
+    width:10%;margin:0 auto;
+    background-color: white;
+    border-color: transparent;
+    height: 2px;
+
+}
+
+
+
+.flex-item input {
+    border-color: transparent;
+    border-radius: 10px;
+    width: 200px;
+    height: 35px;
+    color: #BBB;
+    background-color: white;
+    font-weight: bolder;
+    margin-bottom: 0;
+    padding-left: 3%;
+
+    /*box-shadow: 0px 6px 40px -7px;*/
+
+}
+
+.flex-item p {
+
+}
+
+.flex-container {
+    background-color: #7D3C98;
+    height: 85%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    box-shadow: 0px 6px 40px -7px grey;
+
+}
+.row {
+    width: auto;
+    /*border: 1px solid blue;*/
+}
+
+#buttons {
+    margin-top: 45%;
+}
+
+.flex-item {
+    /*background-color: tomato;*/
+    /*padding: 5px;*/
+    /*width: 20px;*/
+    /*height: 20px;*/
+    /*margin: 10px;*/
+    /*line-height: 20px;*/
+    /*color: white;*/
+    /*font-weight: bold;*/
+    /*font-size: 2em;*/
+    text-align: center;
+}
+
+.flex-item p {
+    margin-bottom: 4%;
+}
+
+#submit {
+    margin-top: 88%;
+    border-color: transparent;
+    border-radius: 25px;
+    width: 230px;
+    height: 48px;
+    color: white;
+    background-color: #00519C;
+    font-weight: bolder;
+    font-size: 1em;
+
+    box-shadow: 0px 6px 40px -7px grey;
+
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #9A9A9A;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #9A9A9A;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #9A9A9A;
+}
+
+</style>
+
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link th:href="@{/css/login.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<div class="flex-container">
+    <div class="row">
+        <div class="flex-item">
+            <div class="header">
+                <h1>Welcome to Something.com</h1>
+
+                <hr>
+            </div>
+        </div>
+
+        <div class="flex-item" id="buttons">
+            <form action="#login" th:action="@{/login}" th:object="${credential}" method="post">
+                <p>School Email</p>
+                <input type="text"  placeholder="JohnDoe@email.com"/>
+                <br>
+                <p>Password</p>
+                <input type="password" placeholder="••••••••"/>
+                <br>
+
+
+                <input id="submit" type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+
+
+</html>
